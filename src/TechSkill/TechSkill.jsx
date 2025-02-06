@@ -33,10 +33,10 @@ const TechSkill = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <div className="my-12 mx-auto text-center w-full">
-      <h2 className="text-3xl md:text-4xl text-violet-800 font-extrabold mb-6">
-        My Skills
-      </h2>
+    <div id="skill-section" className="my-18 mx-auto text-center w-full">
+   <h2 className="text-xl pb-2 md:text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-violet-700 px-4 py-2 md:w-3/12 w-6/12 mx-auto mb-6 text-white ">
+  My Skills
+</h2>
 
       <div className="relative w-full overflow-hidden">
         <motion.div
@@ -45,7 +45,7 @@ const TechSkill = () => {
           transition={{
             repeat: Infinity,
             duration: 10, // Slower animation
-            ease: "easeInOut",
+            ease: "linear",
           }}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}

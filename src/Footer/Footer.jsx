@@ -14,7 +14,7 @@ const Footer = () => {
           <a href="/" className="text-gray-800 flex items-center text-2xl">
             <img className="w-10 mr-2 animate-pulse" src={logo} alt="Logo" />{" "}
             <h1 className={`${theme === "light" ? "text-gray-300" : "text-black"}`}>
-              <span className="text-orange-400">C</span><span className="text-purple-600">hit</span>{" "}
+              <span className="text-orange-400">C</span><span className="text-purple-300">hit</span>{" "}
               <span className="text-orange-400">Rok</span>
             </h1>
           </a>

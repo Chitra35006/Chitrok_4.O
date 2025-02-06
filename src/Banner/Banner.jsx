@@ -4,8 +4,8 @@ import PrimaryButton from "../Buttons/PrimaryButton";
 
 const Banner = () => {
   return (
-    <div className="mt-10">
-      <section className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-violet-950 via-purple-600 to-orange-400 text-white py-16 px-8">
+    <div className="md:mt-16 mt-10">
+      <section className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-violet-950 via-purple-600 to-orange-900 text-white py-16 px-8">
         {/* Left Section: Image with Hover Effect */}
         <motion.div
           className="relative flex items-center justify-center"

@@ -21,9 +21,9 @@ const NavBar = () => {
               isActive
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-900"
+                  : "active-link  font-bold border-b-4 border-violet-200"
                 : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-900"}`
+            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/"
         >
@@ -37,11 +37,17 @@ const NavBar = () => {
               isActive
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-900"
+                  : "active-link  font-bold border-b-4 border-violet-200"
                 : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-900"}`
+            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/about"
+          onClick={(e) => {
+            e.preventDefault(); // Prevent default link behavior
+            document.getElementById("about-section")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           About
         </NavLink>
@@ -53,11 +59,17 @@ const NavBar = () => {
               isActive
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-900"
+                  : "active-link  font-bold border-b-4 border-violet-200"
                 : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-900"}`
+            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
-          to="/skills"
+          to="/skill"
+          onClick={(e) => {
+            e.preventDefault(); // Prevent default link behavior
+            document.getElementById("skill-section")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           Skills
         </NavLink>
@@ -69,11 +81,17 @@ const NavBar = () => {
               isActive
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-900"
+                  : "active-link  font-bold border-b-4 border-violet-200"
                 : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-900"}`
+            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/education"
+          onClick={(e) => {
+            e.preventDefault(); // Prevent default link behavior
+            document.getElementById("education-section")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           Education
         </NavLink>
@@ -85,11 +103,17 @@ const NavBar = () => {
               isActive
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-900"
+                  : "active-link  font-bold border-b-4 border-violet-200"
                 : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-900"}`
+            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/projects"
+          onClick={(e) => {
+            e.preventDefault(); // Prevent default link behavior
+            document.getElementById("project-section")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           Projects
         </NavLink>
@@ -101,11 +125,17 @@ const NavBar = () => {
               isActive
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-900"
+                  : "active-link  font-bold border-b-4 border-violet-200"
                 : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-900"}`
+            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
-          to="/Contact"
+          to="/contacts"
+          onClick={(e) => {
+            e.preventDefault(); // Prevent default link behavior
+            document.getElementById("contact-section")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           Contact
         </NavLink>
@@ -118,7 +148,7 @@ const NavBar = () => {
         className={`navbar px-4 ${
           theme === "dark"
             ? "bg-slate-700"
-            : "bg-gradient-to-r from-orange-200 via-orange-100 to-orange-200"
+            : "bg-gradient-to-r from-orange-900 via-indigo-900 to-orange-900"
 
         }`}
       >
@@ -151,7 +181,7 @@ const NavBar = () => {
             <img className="w-10 hidden lg:block" src={logo} />
             <span
               className={`${
-                theme === "dark" ? "text-violet-500" : "text-violet-950"
+                theme === "dark" ? "text-violet-500" : "text-purple-950"
               } text-2xl`}
             >
               <span className={`${

@@ -2,6 +2,7 @@ import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
+import TechSkill from "../TechSkill/TechSkill";
 
 
 const Home = () => {
@@ -10,7 +11,9 @@ const Home = () => {
            <NavBar></NavBar>
            <Banner></Banner>
            <AboutMe></AboutMe>
-           <div className="bg-violet-950 py-10">
+           <TechSkill></TechSkill>
+           <div className="bg-gradient-to-tr from-violet-950 via-blue-900 to-purple-700
+        py-10">
             <Footer></Footer>
            </div>
         </div>

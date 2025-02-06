@@ -13,8 +13,8 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="mb-10 mt-14 w-10/12 mx-auto">
-      <h2 className="text-3xl md:text-4xl text-violet-800 font-extrabold mb-4">
+    <div className="mb-10 mt-14 w-10/12 mx-auto bg-slate-100 px-8 rounded-4xl">
+      <h2 className="text-3xl md:text-4xl text-violet-800 font-extrabold py-4">
         About Me
       </h2>
 
@@ -47,7 +47,7 @@ const AboutMe = () => {
       </section>
 
       {/* Hobbies Section */}
-      <div className="mt-6">
+      <div className="m-6 pb-8">
         <h3 className="text-2xl font-bold mb-4 text-center text-violet-800">Hobbies</h3>
         <div className="overflow-hidden rounded-lg shadow-lg mx-auto w-full md:w-3/5">
           <table className="table-auto w-full text-center">

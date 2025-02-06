@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useTheme } from '../Context/ThemeContext';
 
 const Contact = () => {
+  const {theme} = useTheme();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,22 +26,22 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact-section' className="bg-gray-100 py-12 mt-20">
+    <section id='contact-section' className={` py-12 mt-20 ${theme === "dark" ? "bg-[#032644]" : "bg-gray-100"}`}>
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         
         {/* Left Side: Contact Form */}
         <motion.div
-          className="w-full md:w-1/2 bg-white p-8 rounded-xl shadow-lg"
+          className={`w-full md:w-1/2  p-8 rounded-xl shadow-lg ${theme === "dark" ? "bg-slate-700" : "bg-white"}`}
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.5 }}  // Trigger when 50% of the element is in view
         >
-          <h2 className="text-3xl font-bold text-violet-800 mb-4">Contact Me</h2>
+          <h2 className={`text-3xl font-bold mb-4 ${theme === "dark" ? "text-orange-300" : "text-violet-800"}`}>Contact Me</h2>
           
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label htmlFor="name" className="block text-lg font-medium text-gray-700">Your Name</label>
+              <label htmlFor="name" className={`block text-lg font-medium ${theme === "dark" ? "text-teal-500" : "text-gray-700"}`}>Your Name</label>
               <input
                 type="text"
                 id="name"
@@ -53,7 +55,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email Address</label>
+              <label htmlFor="email" className={`block text-lg font-medium ${theme === "dark" ? "text-teal-500" : "text-gray-700"}`}>Email Address</label>
               <input
                 type="email"
                 id="email"
@@ -67,7 +69,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="message" className="block text-lg font-medium text-gray-700">Message</label>
+              <label htmlFor="message" className={`block text-lg font-medium ${theme === "dark" ? "text-teal-500" : "text-gray-700"}`}>Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -82,7 +84,7 @@ const Contact = () => {
 
             <motion.button
               type="submit"
-              className="w-full bg-violet-800 text-white py-3 rounded-lg hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 transition duration-300"
+              className={`w-full ${theme === "dark" ? "bg-orange-500" : "bg-violet-800"} text-white py-3 rounded-lg ${theme === "dark" ? "hover:bg-teal-700" : "hover:bg-violet-700"} focus:outline-none focus:ring-2 focus:ring-violet-500 transition duration-300`}
               whileHover={{ scale: 1.05 }}
             >
               Submit
@@ -123,7 +125,7 @@ const Contact = () => {
             <FaWhatsapp className="mr-4 text-xl text-green-700" />
             <div>
               <h4 className="text-xl font-medium text-green-700">WhatsApp</h4>
-              <p className="text-lg">+880 153 765542</p>
+              <p className="text-lg">+880 153 3765542</p>
             </div>
           </div>
 

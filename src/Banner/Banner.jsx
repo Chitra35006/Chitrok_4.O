@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { Slide } from "react-awesome-reveal";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import { useTheme } from "../Context/ThemeContext";
 
 const Banner = () => {
+  const{theme} = useTheme();
   return (
     <div className="md:mt-16 mt-10">
-      <section className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-violet-950 via-purple-600 to-orange-900 text-white py-16 px-8">
+      <section className={`flex flex-col md:flex-row items-center justify-center ${theme === "dark" ? "bg-gradient-to-r from-slate-950 via-purple-600 to-slate-700" : "bg-gradient-to-r from-violet-950 via-purple-600 to-orange-900"} text-white py-16 px-8`}>
         {/* Left Section: Image with Hover Effect */}
         <motion.div
           className="relative flex items-center justify-center"

@@ -1,5 +1,6 @@
 import { GraduationCap, School, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTheme } from "../Context/ThemeContext";
 
 
 const Education = () => {
@@ -13,6 +14,8 @@ const Education = () => {
       text: "GPA",
       text1: "Out of 5.00",
       bg: "bg-gradient-to-br from-blue-100 to-white",
+      bg2: "bg-gradient-to-br from-blue-400 to-white",
+
     },
     {
       level: "HSC",
@@ -23,6 +26,7 @@ const Education = () => {
       text: "GPA",
       text1: "Out of 5.00",
       bg: "bg-gradient-to-br from-green-100 to-white",
+      bg2: "bg-gradient-to-br from-green-400 to-white"
     },
     {
       level: "B.Sc Engg in CSE",
@@ -33,19 +37,21 @@ const Education = () => {
       text: "CGPA",
       text1: "Out of 4.00",
       bg: "bg-gradient-to-br from-purple-100 to-white",
+      bg2: "bg-gradient-to-br from-purple-400 to-white",
     },
   ];
-
+const { theme} = useTheme();
   return (
     <div id="education-section">
-      <h2 className="md:text-4xl text-left w-11/12 mx-auto font-semibold">
+      <h2 className={`md:text-4xl text-left w-11/12 mx-auto font-semibold ${theme === "dark" ? "text-gray-300" : "text-black"}`}>
         Educational Background
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mb-18 mt-10 w-11/12 mx-auto">
         {educationData.map((edu, index) => (
           <motion.div
             key={index}
-            className={`fade-in ${edu.bg} shadow-lg rounded-2xl p-5 flex flex-col items-center text-center border border-gray-200 hover:shadow-xl transition duration-300`}
+            className={`fade-in ${theme === "dark" ? edu.bg2 : edu.bg} shadow-lg rounded-2xl p-5 flex flex-col items-center text-center border border-gray-200 hover:shadow-xl transition duration-300`}
+
             initial={{ opacity: 0, rotateY: 0 }}
             animate={{
               opacity: 1,

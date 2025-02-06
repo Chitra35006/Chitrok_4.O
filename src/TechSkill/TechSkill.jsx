@@ -7,6 +7,7 @@ import nodeLogo from "../assets/node.png";
 import expressLogo from "../assets/express.png";
 import mongoLogo from "../assets/mongo.png";
 import firebaseLogo from "../assets/firebase.png";
+import { useTheme } from "../Context/ThemeContext";
 
 // Explicit Tailwind classes (prevents purging)
 const skillStyles = [
@@ -31,10 +32,10 @@ const skills = [
 
 const TechSkill = () => {
   const [isPaused, setIsPaused] = useState(false);
-
+ const { theme} = useTheme();
   return (
     <div id="skill-section" className="my-18 mx-auto text-center w-full">
-   <h2 className="text-xl pb-2 md:text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-violet-700 px-4 py-2 md:w-3/12 w-6/12 mx-auto mb-6 text-white ">
+   <h2 className={`text-xl pb-2 md:text-4xl font-extrabold  px-4 py-2 md:w-3/12 w-6/12 mx-auto mb-6 text-white ${theme === "dark" ? "bg-gradient-to-r from-orange-400 to-orange-700" : "bg-gradient-to-r from-purple-400 to-violet-700"} `}>
   My Skills
 </h2>
 

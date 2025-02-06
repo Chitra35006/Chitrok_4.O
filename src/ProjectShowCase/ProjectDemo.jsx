@@ -1,5 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
+import { useTheme } from "../Context/ThemeContext";
 
 const projects = [
     {
@@ -62,29 +63,30 @@ futureWork:"Have to verify admin token, need to added interceptor"
   ];
 const ProjectDemo = () => {
     const navigate = useNavigate();
+    const {theme} = useTheme();
 
     const handleProjectClick = (project) => {
         navigate(`/project-details/${project.id}`); // Navigate to /project-details/:id
       };
     return (
         <div id="project-section">
-             <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-10">
+             <div className={`min-h-screen flex flex-col items-center justify-center  p-10 ${theme === "dark" ? "bg-slate-700" : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"}`}>
       <h1 className="text-white text-4xl font-bold mb-10">My Projects</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white p-5 rounded-2xl shadow-lg hover:scale-105 transition transform duration-300"
+            className={` p-5 rounded-2xl shadow-lg hover:scale-105 transition transform duration-300 ${theme === "dark" ? "bg-[#032644]" : "bg-white"}`}
           >
             <img
               src={project.img}
               alt={project.p_name}
               className="w-full h-40 object-cover rounded-md"
             />
-            <h2 className="text-xl font-bold mt-3">{project.p_name}</h2>
+            <h2 className={`${theme === "dark" ? "text-orange-300" : "text-black"}`}>{project.p_name}</h2>
             <p className="text-gray-600 text-sm mt-2">
-  <strong>Technologies:</strong>{" "}
+  <strong className={`${theme === "dark" ? "text-teal-300" : "text-gray-500"}`}>Technologies:</strong>{" "}
   <div className="flex flex-wrap gap-2 mt-1">
     {project.technology.map((tech, index) =>
       tech.technologies.map((t, i) => (

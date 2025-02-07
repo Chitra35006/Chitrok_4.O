@@ -42,7 +42,7 @@ const AboutMe = () => {
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 1 }}
   >
-    <p className="md:text-lg text-[10px] font-medium mb-4 text-gray-500 ">
+    <p className="md:text-lg text-[14px] font-medium mb-4 text-gray-500 ">
       Hi! I&apos;m{" "}
       <span
         className={`font-bold ${
@@ -56,7 +56,7 @@ const AboutMe = () => {
       learning and exploring new technologies.
     </p>
     <p
-      className={`md:text-lg text-[10px] font-medium mb-4 ${
+      className={`md:text-lg text-[14px] font-medium mb-4 ${
         theme === "dark" ? "text-gray-300" : "text-gray-700"
       }`}
     >
@@ -64,13 +64,13 @@ const AboutMe = () => {
       development, where I fell in love with building beautiful, interactive,
       and user-friendly web applications.
     </p>
-    <p className="md:text-lg text-[10px] font-medium mb-4 text-gray-500">
+    <p className="md:text-lg text-[14px] font-medium mb-4 text-gray-500">
       I enjoy working on projects that push the boundaries of interactivity and
       design, and I always strive to make the user experience as seamless as
       possible.
     </p>
     <p
-      className={`md:text-lg text-[10px] font-medium mb-4 ${
+      className={`md:text-lg text-[14px] font-medium mb-4 ${
         theme === "dark" ? "text-gray-300" : "text-gray-700"
       }`}
     >
@@ -86,7 +86,7 @@ const AboutMe = () => {
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 1.2 }}
   >
-    <div className="w-4/5 sm:w-3/4 md:w-2/3 flex items-center justify-center">
+    <div className="w-4/4 sm:w-3/4 md:w-2/3 flex items-center justify-center md:h-full h-[200px]">
       <Lottie options={defaultOptions} height={300} width={300} />
     </div>
   </motion.div>

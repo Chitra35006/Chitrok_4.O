@@ -104,27 +104,27 @@ const Contact = () => {
           
           {/* Email */}
           <div className="mb-4 flex items-center">
-            <FaEnvelope className="mr-4 md:text-xl text-base text-red-700" />
+            <FaEnvelope className={`mr-4 md:text-xl text-base ${theme === "dark" ? "text-purple-300" : "text-purple-600"}`} />
             <div>
-              <h4 className="md:text-xl text-base font-medium text-red-700">Email</h4>
+              <h4 className={`md:text-xl text-base font-medium ${theme === "dark" ? "text-purple-300" : "text-purple-600"}`}>Email</h4>
               <p className="md:text-lg text-[10px]">chitrok24ph@gmail.com</p>
             </div>
           </div>
           
           {/* Phone */}
           <div className="mb-4 flex items-center">
-            <FaPhoneAlt className="mr-4 md:text-xl text-base text-blue-600" />
+            <FaPhoneAlt className={`mr-4 md:text-xl text-base  ${theme === "dark" ? "text-teal-500" : "text-blue-900"}`} />
             <div>
-              <h4 className="md:text-xl text-base font-medium text-blue-600">Phone</h4>
+              <h4 className={`md:text-xl text-base font-medium ${theme === "dark" ? "text-teal-500" : "text-blue-900"}`}>Phone</h4>
               <p className="md:text-lg text-[10px]">+880 182 0865544</p>
             </div>
           </div>
 
           {/* WhatsApp */}
           <div className="mb-4 flex items-center">
-            <FaWhatsapp className="mr-4 md:text-xl text-base text-green-700" />
+            <FaWhatsapp className={`mr-4 md:text-xl text-base ${theme === "dark" ? "text-green-500" : "text-green-900"}`} />
             <div>
-              <h4 className="md:text-xl text-base font-medium text-green-700">WhatsApp</h4>
+              <h4 className={`md:text-xl text-base font-medium ${theme === "dark" ? "text-green-500" : "text-green-900"}`}>WhatsApp</h4>
               <p className="md:text-lg text-[10px]">+880 153 3765542</p>
             </div>
           </div>

@@ -74,7 +74,7 @@ const Footer = () => {
             href="https://www.facebook.com/chitra18.cse"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-500 transition-colors border-dashed border-2 border-blue-500 p-4"
+            className="text-gray-400 hover:text-blue-500 transition-colors border-dashed border-2 border-blue-400 p-4"
             whileHover={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -84,7 +84,7 @@ const Footer = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors border-dashed border-2 border-blue-400 p-4"
+            className="text-gray-400 hover:text-blue-400 transition-colors border-dashed border-2 border-blue-300 p-4"
             whileHover={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -94,7 +94,7 @@ const Footer = () => {
             href="https://github.com/Chitra35006"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-pink-500 transition-colors border-dashed border-2 border-pink-400 p-4"
+            className="text-gray-400 hover:text-pink-500 transition-colors border-dashed border-2 border-pink-300 p-4"
             whileHover={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -104,7 +104,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/chitra-das-cse/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-700 transition-colors border-dashed border-2 border-blue-700 p-4"
+            className="text-gray-400 hover:text-blue-700 transition-colors border-dashed border-2 border-blue-400 p-4"
             whileHover={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -114,7 +114,7 @@ const Footer = () => {
 
         {/* Follow Us Text */}
         <div className="flex justify-center items-center">
-          <span className="text-gray-400 text-center">Follow Me</span>
+          <span className="text-gray-300 text-center">Follow Me</span>
         </div>
       </div>
     </div>

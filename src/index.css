@@ -12,8 +12,40 @@ html {
   }
   
   html.dark body {
-    background-color: #1a202c; /* Dark mode background */
+    background-color: #06132c; /* Dark mode background */
     /* Dark mode text color */
   }
   
 
+  @keyframes wave1 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes wave2 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-wave1 {
+    animation: wave1 5s infinite linear;
+  }
+  
+  .animate-wave2 {
+    animation: wave2 5s infinite linear;
+  }
+  

@@ -70,7 +70,7 @@ const ProjectDemo = () => {
       };
     return (
         <div id="project-section">
-             <div className={`min-h-screen flex flex-col items-center justify-center  p-10 ${theme === "dark" ? "bg-slate-700" : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"}`}>
+             <div className={`min-h-screen flex flex-col items-center justify-center  p-10 ${theme === "dark" ? "bg-gradient-to-r from-blue-950 via-purple-700 to-pink-800" : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"}`}>
       <h1 className="text-white text-4xl font-bold mb-10">My Projects</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

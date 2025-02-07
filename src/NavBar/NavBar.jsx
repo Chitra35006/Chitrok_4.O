@@ -31,26 +31,29 @@ const NavBar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) =>
-            `${
-              isActive
-                ? theme === "dark"
-                  ? "active-link font-bold border-b-4 border-orange-400"
-                  : "active-link  font-bold border-b-4 border-violet-200"
-                : "inactive-link"
-            } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
-          }
-          to="/about"
-          onClick={(e) => {
-            e.preventDefault(); // Prevent default link behavior
-            document.getElementById("about-section")?.scrollIntoView({
-              behavior: "smooth",
-            });
-          }}
-        >
-          About
-        </NavLink>
+      <NavLink
+  className={({ isActive }) =>
+    `${
+      isActive
+        ? theme === "dark"
+          ? "active-link font-bold border-b-4 border-orange-400"
+          : "active-link font-bold border-b-4 border-violet-400"
+        : theme === "dark"
+        ? "inactive-link border-1 border-violet-200 ml-2 rounded-2xl"
+        : "inactive-link border-1 border-orange-600 ml-2 rounded-2xl"
+    } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
+  }
+  to="/about"
+  onClick={(e) => {
+    e.preventDefault(); // Prevent default link behavior
+    document.getElementById("about-section")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+>
+  About
+</NavLink>
+
       </li>
       <li>
         <NavLink
@@ -60,7 +63,9 @@ const NavBar = () => {
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
                   : "active-link  font-bold border-b-4 border-violet-200"
-                : "inactive-link"
+                  : theme === "dark"
+                  ? "inactive-link border-1 border-violet-200 ml-2 rounded-2xl"
+                  : "inactive-link border-1 border-orange-600 ml-2 rounded-2xl"
             } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/skill"
@@ -82,7 +87,9 @@ const NavBar = () => {
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
                   : "active-link  font-bold border-b-4 border-violet-200"
-                : "inactive-link"
+                  : theme === "dark"
+                  ? "inactive-link border-1 border-violet-200 ml-2 rounded-2xl"
+                  : "inactive-link border-1 border-orange-600 ml-2 rounded-2xl"
             } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/education"
@@ -104,7 +111,9 @@ const NavBar = () => {
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
                   : "active-link  font-bold border-b-4 border-violet-200"
-                : "inactive-link"
+                  : theme === "dark"
+                  ? "inactive-link border-1 border-violet-200 ml-2 rounded-2xl"
+                  : "inactive-link border-1 border-orange-600 ml-2 rounded-2xl"
             } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/projects"
@@ -126,7 +135,9 @@ const NavBar = () => {
                 ? theme === "dark"
                   ? "active-link font-bold border-b-4 border-orange-400"
                   : "active-link  font-bold border-b-4 border-violet-200"
-                : "inactive-link"
+                  : theme === "dark"
+                  ? "inactive-link border-1 border-violet-200 ml-2 rounded-2xl"
+                  : "inactive-link border-1 border-orange-600 ml-2 rounded-2xl"
             } ${theme === "dark" ? "text-orange-200" : "text-violet-200"}`
           }
           to="/contacts"
@@ -148,7 +159,7 @@ const NavBar = () => {
         className={`navbar px-4 ${
           theme === "dark"
             ? "bg-slate-700"
-            : "bg-gradient-to-r from-orange-900 via-indigo-900 to-orange-900"
+            : "bg-gradient-to-r from-orange-800 via-indigo-900 to-orange-700"
 
         }`}
       >

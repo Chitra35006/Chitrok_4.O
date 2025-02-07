@@ -86,7 +86,7 @@ const AboutMe = () => {
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 1.2 }}
   >
-    <div className="w-4/4 sm:w-3/4 md:w-2/3 flex items-center justify-center md:h-full h-[200px]">
+    <div className="w-4/4  md:w-2/3 flex items-center justify-center md:h-full h-[200px] p-0 md:p-6">
       <Lottie options={defaultOptions} height={300} width={300} />
     </div>
   </motion.div>

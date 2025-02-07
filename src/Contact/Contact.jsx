@@ -94,7 +94,7 @@ const Contact = () => {
 
         {/* Right Side: Contact Information */}
         <motion.div
-          className="w-full md:w-1/2 bg-gradient-to-r from-purple-400 via-violet-500 to-violet-900 text-white p-8 rounded-4xl shadow-lg mt-8 md:mt-0"
+          className={`w-full md:w-1/2  text-white p-8 rounded-4xl shadow-lg mt-8 md:mt-0 ${theme === "dark" ? "bg-gradient-to-r from-teal-800 via-slate-800 to-slate-900" : "bg-gradient-to-r from-purple-400 via-violet-500 to-violet-900"}`}
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}

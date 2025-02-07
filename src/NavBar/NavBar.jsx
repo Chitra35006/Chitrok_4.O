@@ -158,8 +158,8 @@ const NavBar = () => {
       <div
         className={`navbar px-4 ${
           theme === "dark"
-            ? "bg-slate-700"
-            : "bg-gradient-to-r from-orange-800 via-indigo-900 to-orange-700"
+            ? "bg-gradient-to-r from-slate-700 via-teal-900 to-teal-700"
+            : "bg-gradient-to-r from-slate-800 via-slate-700 to-orange-700"
 
         }`}
       >
@@ -191,29 +191,34 @@ const NavBar = () => {
           <a className="btn btn-ghost text-xl">
             <img className="w-10 hidden lg:block" src={logo} />
             <span
-              className={`${
-                theme === "dark" ? "text-violet-500" : "text-purple-950"
-              } text-2xl`}
-            >
-              <span className={`${
-                theme === "dark" ? "text-orange-300" : "text-orange-500"
-              }`}>C</span>hitra
-            </span>
-            <span
-              className={`${
-                theme === "dark" ? "text-orange-300" : "text-orange-400"
-              } text-2xl`}
-            >
-              <Typewriter
-                words={["Rani Das"]}
-                loop={true} // Loops infinitely
-                cursor
-                cursorStyle="_"
-                typeSpeed={100} // Typing speed (ms)
-                deleteSpeed={50} // Deleting speed (ms)
-                delaySpeed={1000} // Delay between words (ms)
-              />
-            </span>
+  className="text-2xl bg-gradient-to-r from-violet-500 via-purple-600 to-pink-500 bg-clip-text text-transparent"
+>
+  <span
+    className={`${
+      theme === "dark" ? "text-orange-300" : "text-orange-400"
+    }`}
+  >
+    C
+  </span>
+  hitra
+</span>
+
+<span
+  className={`${
+    theme === "dark" ? "text-orange-300" : "text-orange-400"
+  } text-2xl bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 bg-clip-text text-transparent`}
+>
+  <Typewriter
+    words={["Rani Das"]}
+    loop={true}
+    cursor
+    cursorStyle="_"
+    typeSpeed={100}
+    deleteSpeed={50}
+    delaySpeed={1000}
+  />
+</span>
+
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">

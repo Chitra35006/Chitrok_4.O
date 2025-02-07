@@ -24,7 +24,7 @@ const Footer = () => {
           <defs>
             <linearGradient id="waveGradient1" gradientTransform="rotate(15)">
               <stop offset="0%" stopColor="#3f0ba5 " /> {/* Violet-950 */}
-              <stop offset="50%" stopColor="#0eb2b2 " /> {/* Blue-900 */}
+              <stop offset="50%" stopColor="#0eb2b2" /> {/* Blue-900 */}
               <stop offset="100%" stopColor="#6b21a8" /> {/* Purple-700 */}
             </linearGradient>
           </defs>
@@ -61,8 +61,8 @@ const Footer = () => {
             <a href="/" className="text-gray-800 flex items-center text-2xl">
               <img className="w-10 mr-2 animate-pulse" src={logo} alt="Logo" />{" "}
               <h1 className={`${theme === "light" ? "text-gray-300" : "text-black"}`}>
-                <span className="text-orange-400">C</span><span className="text-purple-300">hit</span>{" "}
-                <span className="text-orange-400">Rok</span>
+                <span className="text-teal-300">C</span><span className="text-purple-400">hit</span>{" "}
+                <span className="text-teal-300">Rok</span>
               </h1>
             </a>
           </div>

@@ -42,7 +42,7 @@ const Education = () => {
   ];
 const { theme} = useTheme();
   return (
-    <div id="education-section">
+    <div id="education-section" className={` py-4 ${theme === "dark" ? "bg-gradient-to-r from-slate-950 via-purple-500 to-slate-600" : "bg-gradient-to-r from-slate-200 via-purple-400 to-orange-200"}`}>
       <h2 className={`md:text-4xl text-left w-11/12 mx-auto font-semibold ${theme === "dark" ? "text-gray-300" : "text-black"}`}>
         Educational Background
       </h2>

@@ -31,13 +31,13 @@ const Contact = () => {
         
         {/* Left Side: Contact Form */}
         <motion.div
-          className={`w-full md:w-1/2  p-8 rounded-xl shadow-lg ${theme === "dark" ? "bg-slate-700" : "bg-white"}`}
+          className={`w-full md:w-1/2  p-8 rounded-xl shadow-lg ${theme === "dark" ? "bg-gradient-to-r from-slate-700 via-teal-900 to-teal-700" : "bg-white"}`}
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.5 }}  // Trigger when 50% of the element is in view
         >
-          <h2 className={`text-3xl font-bold mb-4 ${theme === "dark" ? "text-orange-300" : "text-violet-800"}`}>Contact Me</h2>
+          <h2 className={`md:text-3xl text-2xl font-bold mb-4 ${theme === "dark" ? "text-orange-300" : "text-violet-800"}`}>Contact Me</h2>
           
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -100,38 +100,38 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.5 }}  // Trigger when 50% of the element is in view
         >
-          <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+          <h2 className="md:text-3xl text-2xl font-bold mb-6">Get in Touch</h2>
           
           {/* Email */}
           <div className="mb-4 flex items-center">
-            <FaEnvelope className="mr-4 text-xl text-red-700" />
+            <FaEnvelope className="mr-4 md:text-xl text-base text-red-700" />
             <div>
-              <h4 className="text-xl font-medium text-red-700">Email</h4>
-              <p className="text-lg">chitrok24ph@gmail.com</p>
+              <h4 className="md:text-xl text-base font-medium text-red-700">Email</h4>
+              <p className="md:text-lg text-[10px]">chitrok24ph@gmail.com</p>
             </div>
           </div>
           
           {/* Phone */}
           <div className="mb-4 flex items-center">
-            <FaPhoneAlt className="mr-4 text-xl text-blue-600" />
+            <FaPhoneAlt className="mr-4 md:text-xl text-base text-blue-600" />
             <div>
-              <h4 className="text-xl font-medium text-blue-600">Phone</h4>
-              <p className="text-lg">+880 182 0865544</p>
+              <h4 className="md:text-xl text-base font-medium text-blue-600">Phone</h4>
+              <p className="md:text-lg text-[10px]">+880 182 0865544</p>
             </div>
           </div>
 
           {/* WhatsApp */}
           <div className="mb-4 flex items-center">
-            <FaWhatsapp className="mr-4 text-xl text-green-700" />
+            <FaWhatsapp className="mr-4 md:text-xl text-base text-green-700" />
             <div>
-              <h4 className="text-xl font-medium text-green-700">WhatsApp</h4>
-              <p className="text-lg">+880 153 3765542</p>
+              <h4 className="md:text-xl text-base font-medium text-green-700">WhatsApp</h4>
+              <p className="md:text-lg text-[10px]">+880 153 3765542</p>
             </div>
           </div>
 
           {/* Additional text */}
           <div className="text-center mt-6">
-            <p className="text-base">I&apos;m open to new opportunities and collaborations. Let&apos;s work together!</p>
+            <p className="md:text-base text-[12px]">I&apos;m open to new opportunities and collaborations. Let&apos;s work together!</p>
           </div>
         </motion.div>
       </div>

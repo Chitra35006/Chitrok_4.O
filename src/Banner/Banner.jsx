@@ -44,7 +44,7 @@ const Banner = () => {
         {/* Right Section with Slide Animation */}
         <Slide direction="right" duration={1000} triggerOnce>
           <div className="text-center md:text-left md:ml-10 mt-6 md:mt-0 max-w-lg">
-            <h2 className="text-3xl md:text-4xl font-extrabold">
+            <h2 className="text-2xl md:text-4xl font-extrabold">
               Hi! I am{" "}
               <span className="text-purple-600 bg-orange-200 px-1 rounded-2xl">
                 Chitra
@@ -52,7 +52,7 @@ const Banner = () => {
               , a passionate{" "}
               <span className="text-orange-200">Frontend Developer</span>
             </h2>
-            <p className="mt-4 text-lg">
+            <p className="mt-4 md:text-lg text-base">
               Focused on learning and exploring new technologies. I love
               building interactive and user-friendly web experiences.
             </p>

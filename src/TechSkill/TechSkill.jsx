@@ -11,13 +11,13 @@ import { useTheme } from "../Context/ThemeContext";
 
 // Explicit Tailwind classes (prevents purging)
 const skillStyles = [
-  { bg: "bg-blue-600", border: "border-blue-600", text: "text-white" },
-  { bg: "bg-red-600", border: "border-red-600", text: "text-white" },
-  { bg: "bg-orange-600", border: "border-orange-600", text: "text-white" },
-  { bg: "bg-lime-800", border: "border-lime-800", text: "text-white" },
-  { bg: "bg-yellow-500", border: "border-yellow-500", text: "text-black" },
-  { bg: "bg-green-700", border: "border-green-700", text: "text-white" },
-  { bg: "bg-teal-500", border: "border-teal-500", text: "text-white" },
+  { bg: "bg-blue-500", border: "border-blue-600", text: "text-white" },
+  { bg: "bg-red-500", border: "border-red-600", text: "text-white" },
+  { bg: "bg-orange-500", border: "border-orange-600", text: "text-white" },
+  { bg: "bg-lime-800", border: "border-lime-500", text: "text-white" },
+  { bg: "bg-yellow-500", border: "border-yellow-600", text: "text-black" },
+  { bg: "bg-green-600", border: "border-green-700", text: "text-white" },
+  { bg: "bg-teal-500", border: "border-teal-600", text: "text-white" },
 ];
 
 const skills = [

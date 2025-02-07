@@ -19,8 +19,8 @@ const NoExp = () => {
             repeatType: "loop", // Keeps repeating the animation in a loop
           }}
         >
-          <h4 className={`text-xl pb-2 font-bold ${theme === "dark" ? "text-orange-300" : "text-black"}`}>Experiences</h4>
-          <p className={`${theme === "dark" ? "text-teal-100" : "text-gray-600"}`}>
+          <h4 className={`md:text-xl text-lg pb-2 font-bold ${theme === "dark" ? "text-orange-300" : "text-black"}`}>Experiences</h4>
+          <p className={` md:text-base text-[12px] ${theme === "dark" ? "text-teal-100" : "text-gray-600"}`}>
             Although I don&apos;t have professional experience yet, I am eager to seize any opportunity that will allow me to apply my skills and give my best performance.
           </p>
         </motion.div>
@@ -39,14 +39,14 @@ const NoExp = () => {
           }}
         >
           <div className="mb-4">
-            <h4 className={`text-xl pb-2 font-bold ${theme === "dark" ? "text-orange-300" : "text-black"}`}>Why Hire Me?</h4>
-            <p className={`${theme === "dark" ? "text-teal-100" : "text-gray-600"}`}>
+            <h4 className={`md:text-xl text-lg pb-2 font-bold ${theme === "dark" ? "text-orange-300" : "text-black"}`}>Why Hire Me?</h4>
+            <p className={` md:text-base text-[12px] ${theme === "dark" ? "text-teal-100" : "text-gray-600"}`}>
               While I may not have work experience yet, my passion for web development and my commitment to learning make me a great fit for any opportunity. I am dedicated to improving my skills and providing high-quality work.
             </p>
           </div>
       
           <div className="text-end">
-            <p className={` text-sm ${theme === "dark" ? "text-orange-300" : "text-gray-500"}`}>I am excited to bring my enthusiasm, skills, and determination to new opportunities!</p>
+            <p className={`md:text-sm text-[8px] ${theme === "dark" ? "text-orange-300" : "text-gray-500"}`}>I am excited to bring my enthusiasm, skills, and determination to new opportunities!</p>
             <button className={`mt-4 text-white  px-4 py-2 rounded-full ${theme === "dark" ? "bg-teal-700" : "bg-violet-800"} ${theme === "dark" ? "hover:bg-orange-700" : "hover:bg-violet-700 "}`}>
               Let&apos;s Connect
             </button>
